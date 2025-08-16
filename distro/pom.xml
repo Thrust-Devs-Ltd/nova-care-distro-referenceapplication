@@ -25,7 +25,7 @@
          we do so here so that we can utilise Maven to track updates, etc. -->
     <openmrs.version>2.7.5-SNAPSHOT</openmrs.version>
     <initializer.version>2.9.0</initializer.version>
-    <fhir2.version>2.8.0-SNAPSHOT</fhir2.version>
+    <fhir2.version>2.5.0-SNAPSHOT</fhir2.version>
     <webservices.rest.version>2.50.0-SNAPSHOT</webservices.rest.version>
     <addresshierarchy.version>2.21.0</addresshierarchy.version>
     <idgen.version>4.14.0</idgen.version>
@@ -53,10 +53,28 @@
     <bedmanagement.version>6.2.0-SNAPSHOT</bedmanagement.version>
     <!-- Stock Management and Billing -->
     <stockmanagement.version>2.0.3</stockmanagement.version>
-    <billing.version>1.3.2</billing.version>
+    <!-- <orderexpansion.version>1.0.1-SNAPSHOT</orderexpansion.version> -->
+    <orderexpansion.version>1.0.0</orderexpansion.version>
+
+    <uiframework.version>3.25.0</uiframework.version>
+    <appframework.version>2.19.0-SNAPSHOT</appframework.version>
+    <htmlformentry.version>5.4.0</htmlformentry.version>
+    <appui.version>1.10.0</appui.version>
+    <groovy.version>2.3.1</groovy.version>
+    <uicommons.version>2.26.0</uicommons.version>
+    <metadatasharing.version>1.9.0</metadatasharing.version>
+    <reportingcompatibility.version>2.0.9</reportingcompatibility.version>
+    <metadatadeploy.version>1.13.0</metadatadeploy.version>
     <!-- Content Packages -->
     <reference-content.version>1.3.0-SNAPSHOT</reference-content.version>
     <reference-demo-content.version>1.5.0-SNAPSHOT</reference-demo-content.version>
+
+       <!--Kenya EMR modules-->
+    <kenyacore.version>3.0.2-SNAPSHOT</kenyacore.version>
+    <kenyaui.version>3.0.0</kenyaui.version>
+    <kenyaemrorderentry.version>1.6.6</kenyaemrorderentry.version>
+    <kenyakeypop.version>1.4.0</kenyakeypop.version>
+
   </properties>
 
   <dependencies>
@@ -225,10 +243,91 @@
       <version>${stockmanagement.version}</version>
       <scope>provided</scope>
     </dependency>
+   
+      <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>orderexpansion-omod</artifactId>
+      <version>${orderexpansion.version}</version>
+       <scope>provided</scope>
+    </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
-      <artifactId>billing-omod</artifactId>
-      <version>${billing.version}</version>
+      <artifactId>uiframework-omod</artifactId>
+      <version>${uiframework.version}</version>
+      <scope>provided</scope>
+    </dependency> 
+      <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>appframework-omod</artifactId>
+      <version>${appframework.version}</version>
+     <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>htmlformentry-omod</artifactId>
+      <version>${htmlformentry.version}</version>
+       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>appui-omod</artifactId>
+      <version>${appui.version}</version>
+       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>groovy-omod</artifactId>
+      <version>${groovy.version}</version>
+       <scope>provided</scope>
+    </dependency> 
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>uicommons-omod</artifactId>
+      <version>${uicommons.version}</version>
+       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>metadatasharing-omod</artifactId>
+      <version>${metadatasharing.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>reportingcompatibility-omod</artifactId>
+      <version>${reportingcompatibility.version}</version>
+       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>metadatadeploy-omod</artifactId>
+      <version>${metadatadeploy.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+      <!--Kenya EMR dependencies-->
+     <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>kenyaui-omod</artifactId>
+      <version>${kenyaui.version}</version>
+       <scope>provided</scope>
+    </dependency>  
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>kenyaemrorderentry-omod</artifactId>
+      <version>${kenyaemrorderentry.version}</version>
+       <scope>provided</scope>
+    </dependency> 
+     <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>kenyacore-omod</artifactId>
+      <version>${kenyacore.version}</version>
+      <scope>provided</scope>
+    </dependency>
+     <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>kenyakeypop-omod</artifactId>
+      <version>${kenyakeypop.version}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>

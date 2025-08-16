@@ -41,5 +41,172 @@
   },
   "@openmrs/esm-styleguide": {
     "Brand color #1": "#005d5d"
+  },
+    "@thrustdevs/esm-patient-registration-app": {
+    "sections": [
+      "demographics",
+      "contact",
+      "additionalInformation",
+      "nextOfKin",
+      "insuranceCover"
+    ],
+    "fieldConfigurations": {
+      "address": {
+        "useAddressHierarchy": {
+          "searchAddressByLevel": false
+        }
+      }
+    },
+    "sectionDefinitions": [
+      {
+        "id": "contact",
+        "name": "Contact Details",
+        "fields": [
+          "address",
+          "telephoneField",
+          "emailAddress"
+        ]
+      },
+      {
+        "id": "additionalInformation",
+        "name": "Additional Information",
+        "fields": [
+          "birthPlaceField",
+          "socialStatusField",
+          "educationLevel",
+          "occupation"
+        ]
+      },
+      {
+        "id": "nextOfKin",
+        "name": "Next of Kin Details",
+        "fields": [
+          "nextOfKinName",
+          "nextOfkinRelationsip",
+          "nextOfkinPhone",
+          "nextOfKinAddress"
+        ]
+      },
+      {
+        "id": "insuranceCover",
+        "name": "Patient Insurance Cover",
+        "fields": [
+          "hasMedicalInsurance",
+          "insuranceScheme",
+          "policyNumber"
+        ]
+      }
+    ],
+    "defaultPatientIdentifierTypes": [
+      "fcf5bde1-e6ce-4070-922c-ffc7712c7493",
+      "d45533e5-8509-48a4-bb7e-0c58fffaea30"
+    ],
+    "registrationObs": {
+      "encounterTypeUuid": "de1f9d67-b73e-4e1b-90d0-036166fc6995"
+    },
+    "fieldDefinitions": [
+      {
+        "id": "telephoneField",
+        "type": "person attribute",
+        "uuid": "14d4f066-15f5-102d-96e4-000c29c2a5d7",
+        "placeholder": "placeholder"
+      },
+      {
+        "id": "emailAddress",
+        "type": "person attribute",
+        "uuid": "2db1554a-c46f-4c6a-bc2d-818fcab8c258",
+        "label": "Email address",
+        "validation": {
+          "matches": "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"
+        }
+      },
+      {
+        "id": "birthPlaceField",
+        "type": "person attribute",
+        "uuid": "8d8718c2-c2cc-11de-8d13-0010c6dffd0f",
+        "placeholder": "placeholder"
+      },
+      {
+        "id": "socialStatusField",
+        "type": "person attribute",
+        "uuid": "8d871f2a-c2cc-11de-8d13-0010c6dffd0f",
+        "placeholder": "placeholder",
+        "label": "Marital status",
+        "answerConceptSetUuid": "1054AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      {
+        "id": "educationLevel",
+        "type": "person attribute",
+        "uuid": "f526e58f-48a1-4dda-9948-ecb896a131e8",
+        "placeholder": "placeholder",
+        "label": "Level Of Education"
+      },
+      {
+        "id": "occupation",
+        "type": "person attribute",
+        "uuid": "18faa31f-e9ff-4b78-9dbe-7ac2eceb5a37",
+        "placeholder": "placeholder",
+         "label": "Occupation"
+      },
+      {
+        "id": "nextOfKinName",
+        "type": "person attribute",
+        "uuid": "830bef6d-b01f-449d-9f8d-ac0fede8dbd3",
+        "label": "Name"
+      },
+      {
+        "id": "nextOfkinRelationsip",
+        "type": "person attribute",
+        "uuid": "d0aa9fd1-2ac5-45d8-9c5e-4317c622c8f5",
+        "label": "Relationship"
+      },
+      {
+        "id": "nextOfkinPhone",
+        "type": "person attribute",
+        "uuid": "342a1d39-c541-4b29-8818-930916f4c2dc",
+        "label": "Phone Number",
+        "validation": {
+          "matches": "^0([0-9](?:(?:[0-9][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$"
+        }
+      },
+      {
+        "id": "nextOfKinAddress",
+        "type": "person attribute",
+        "uuid": "7cf22bec-d90a-46ad-9f48-035952261294",
+        "label": "Postal Address"
+      },
+      {
+        "id": "hasMedicalInsurance",
+        "type": "person attribute",
+        "uuid": "d2860828-00b8-475f-b8b9-3167719f5080",
+        "answerConceptSetUuid": "db7957e8-5848-4113-b8fe-4a9eb708b678",
+        "label": "Patient has medical insurance?",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "id": "insuranceScheme",
+        "type": "person attribute",
+        "uuid": "cf2f791b-cd29-4273-9f8d-4992ccbf28f7",
+        "answerConceptSetUuid": "f3a34549-851b-45e4-828e-e88ce459657d",
+        "label": "What Medical Aid cover patient falls under?",
+        "showWhenExpression": {
+          "field": "d2860828-00b8-475f-b8b9-3167719f5080",
+          "value": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        }
+      },
+      {
+        "id": "policyNumber",
+        "type": "person attribute",
+        "uuid": "9c1966f4-c696-425b-852c-b0ebaa9eb3be",
+        "label": "Insurance Policy Number",
+        "placeholder": "Enter policy number:",
+        "showWhenExpression": {
+          "field": "d2860828-00b8-475f-b8b9-3167719f5080",
+          "value": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        }
+      }
+    ]
   }
 }

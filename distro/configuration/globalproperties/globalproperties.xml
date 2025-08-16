@@ -1,0 +1,39 @@
+<config>
+    <globalProperties>
+        <globalProperty>
+            <property>concept.true</property>
+            <value>1</value>
+        </globalProperty>
+        <globalProperty>
+            <property>concept.false</property>
+            <value>2</value>
+        </globalProperty>
+        <globalProperty>
+            <property>visits.assignmentHandler</property>
+            <value>org.openmrs.api.handler.ExistingVisitAssignmentHandler</value>
+        </globalProperty>
+        <globalProperty>
+            <property>visits.allowOverlappingVisits</property>
+            <value>false</value>
+        </globalProperty>
+         <globalProperty>
+            <property>kenyaemr.billing.autoBillOrders</property>
+            <value>true</value>
+        </globalProperty>
+        <globalProperty>
+			<property>kenyaemr.defaultLocation</property>
+			<value>4</value>
+			<description>The facility for which this installation is configured</description>
+		</globalProperty>
+		<globalProperty>
+			<property>webservices.rest.maxResultsDefault</property>
+			<value>1000</value>
+			<description>The default max results limit if the user does not provide a maximum when making the web service call.</description>
+		</globalProperty>
+       <globalProperty>
+			<property>webservices.rest.maxResultsAbsolute</property>
+			<value>260</value>
+			<description>The absolute max results limit. If the client requests a larger number of results, then will get an error</description>
+		</globalProperty>
+    </globalProperties>
+</config>

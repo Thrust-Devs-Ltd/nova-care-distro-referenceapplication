@@ -3,7 +3,6 @@
     "@openmrs/esm-active-visits-app": "next",
     "@openmrs/esm-appointments-app": "next",
     "@openmrs/esm-bed-management-app": "next",
-    "@openmrs/esm-billing-app": "next",
     "@openmrs/esm-cohort-builder-app": "next",
     "@openmrs/esm-devtools-app": "next",
     "@openmrs/esm-dispensing-app": "next",
@@ -31,7 +30,7 @@
     "@openmrs/esm-patient-notes-app": "next",
     "@openmrs/esm-patient-orders-app": "next",
     "@openmrs/esm-patient-programs-app": "next",
-    "@openmrs/esm-patient-registration-app": "next",
+    "@thrustdevs/esm-patient-registration-app": "next",
     "@openmrs/esm-patient-search-app": "next",
     "@openmrs/esm-patient-tests-app": "next",
     "@openmrs/esm-patient-vitals-app": "next",
@@ -41,7 +40,10 @@
     "@openmrs/esm-stock-management-app": "next",
     "@openmrs/esm-system-admin-app": "next",
     "@openmrs/esm-user-onboarding-app": "next",
-    "@openmrs/esm-ward-app": "next"
+    "@openmrs/esm-ward-app": "next",
+    "@thrustdevs/esm-billing-app": "1.0.1-pre.11",
+    "@thrustdevs/esm-procedure-orders-app": "next",
+    "@thrustdevs/esm-imaging-orders-app": "next"
   },
   "excludedFrontendModules": []
 }

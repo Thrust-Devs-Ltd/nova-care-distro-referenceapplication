@@ -1,0 +1,33 @@
+<addressConfiguration>
+  <wipe>true</wipe>
+  <addressComponents>
+    <addressComponent>
+      <field>COUNTRY</field>
+      <nameMapping>Location.country</nameMapping>
+      <sizeMapping>40</sizeMapping>
+      <requiredInHierarchy>true</requiredInHierarchy>
+    </addressComponent>
+    <addressComponent>
+      <field>COUNTY_DISTRICT</field>
+      <nameMapping>Location.district</nameMapping>
+      <sizeMapping>40</sizeMapping>
+      <requiredInHierarchy>true</requiredInHierarchy>
+    </addressComponent>
+    <addressComponent>
+      <field>ADDRESS_1</field>
+      <nameMapping>Home address</nameMapping>
+      <sizeMapping>40</sizeMapping>
+      <requiredInHierarchy>true</requiredInHierarchy>
+    </addressComponent>
+  </addressComponents>
+  <lineByLineFormat>
+    <string>address1</string>
+    <string>countyDistrict</string>
+    <string>country</string>
+  </lineByLineFormat>
+  <addressHierarchyFile>
+    <filename>addresshierarchy.csv</filename>
+    <entryDelimiter>,</entryDelimiter>
+    <identifierDelimiter>%</identifierDelimiter>
+  </addressHierarchyFile>
+</addressConfiguration>

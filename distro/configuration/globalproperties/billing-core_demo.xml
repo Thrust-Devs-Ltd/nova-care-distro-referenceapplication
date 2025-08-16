@@ -1,0 +1,15 @@
+<config>
+    <globalProperties>
+        <globalProperty>
+            <property>kenyaemr.cashier.systemReceiptNumberGenerator</property>
+            <value>org.openmrs.module.kenyaemr.cashier.api.SequentialReceiptNumberGenerator</value>
+            <description>Fully qualified class name of the receipt number generator to be used.</description>
+        </globalProperty> 
+
+        <globalProperty>
+            <property>openhmis.cashier.systemReceiptNumberGenerator</property>
+            <value>org.openmrs.module.kenyaemr.cashier.api.SequentialReceiptNumberGenerator</value>
+            <description>Fully qualified class name of the receipt number generator to be used.</description>
+        </globalProperty> 
+    </globalProperties>
+</config>

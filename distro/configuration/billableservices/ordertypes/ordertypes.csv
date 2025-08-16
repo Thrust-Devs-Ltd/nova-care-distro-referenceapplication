@@ -1,0 +1,5 @@
+Uuid,Void/Retire,Name,display:en,display:fr,Description,Java class name,Parent,Concept Classes
+131168f4-15f5-102d-96e4-000c29c2a5d7,,Drug Order,An order for a medication to be given to the patient,,An order for a medication to be given to the patient,org.openmrs.DrugOrder,,
+52a447d3-a64a-11e3-9aeb-50e549534c5e,,Test Order,Order type for test orders,,Order type for test orders,org.openmrs.TestOrder,,
+b4a7c280-369e-4d12-9ce8-18e36783fed6,,Procedure Order,Procedure Order,,Procedure order type used together for Procedure.,org.openmrs.module.orderexpansion.api.model.ProcedureOrder,,Procedure;Radiology/Imaging Procedure
+dab3ab30-2feb-48ec-b4af-8332a0831b49,,Medical Supplies Order,Medical Supplies Order,,Medical supplies order type used for non pharm,org.openmrs.module.orderexpansion.api.model.MedicalSupplyOrder,,Medical supply

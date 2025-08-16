@@ -1,0 +1,6 @@
+Uuid,Void/Retire,Same as mappings,Fully specified name:en,Short name:en,Description:en,Data class,Data type,Answers
+b1e082af-795e-431b-a3e7-149206e30c16,,,Illiterate,Illiterate,Illiterate,Misc,N/A,
+c6fe3d03-2854-41a4-a2ec-b134e2287d88,,,High School,High School,High School,Misc,N/A,
+ac2d1172-77c2-4c1d-afbb-cb3b61c42787,,,Graduate,Graduate,Graduate,Misc,N/A,
+b8740be5-2b1e-4b73-9cda-166463355eb1,,,Post Graduate,Post Graduate,Post Graduate,Misc,N/A,
+694cc7ed-e9de-4951-b593-3a925c9f2aaa,,,Education Level,Education Level,Education Level,Question,Coded,Illiterate;High School;Graduate;Post Graduate;Other non-coded
