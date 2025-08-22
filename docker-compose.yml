@@ -9,6 +9,8 @@ services:
       - backend
     ports:
       - "80:80"
+    networks:
+      - distro-network
 
   frontend:
     image: openmrs/openmrs-reference-application-3-frontend:${TAG:-qa}
@@ -23,6 +25,8 @@ services:
       timeout: 5s
     depends_on:
       - backend
+    networks:
+      - distro-network
 
   backend:
     image: openmrs/openmrs-reference-application-3-backend:${TAG:-qa}
@@ -42,7 +46,10 @@ services:
       timeout: 5s
     volumes:
       - openmrs-data:/openmrs/data
-
+    networks:
+      - distro-network
+    ports:
+      - "8282:8080"
   # MariaDB
   db:
     image: mariadb:10.11.7
@@ -60,7 +67,18 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-openmrs}
     volumes:
       - db-data:/var/lib/mysql
+    networks:
+      - distro-network
 
 volumes:
   openmrs-data: ~
   db-data: ~
+
+networks:
+  distro-network:
+    name: distro-network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.1.0/24
+
